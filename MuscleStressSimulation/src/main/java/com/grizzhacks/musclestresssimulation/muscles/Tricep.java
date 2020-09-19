@@ -10,7 +10,7 @@ package com.grizzhacks.musclestresssimulation.muscles;
  * @author Matt
  */
 public class Tricep extends Muscle{
-    
+    //test
     private int muscleLength;
     
     Tricep(int length){
