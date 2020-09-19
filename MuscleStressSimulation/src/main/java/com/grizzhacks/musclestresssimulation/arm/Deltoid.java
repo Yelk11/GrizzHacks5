@@ -20,8 +20,10 @@ public class Deltoid
     private int muscleLength;
     
     
-    public int getTension(){
-        return tension;
+    public double getTension(double weight_1, double weight_2){
+        double alpha = 16; // 16 degrees
+        return (2 * weight_1 + 4 * weight_2)/Math.sin(alpha);
+        
     }
     
     public void setTension(int tension){
