@@ -9,6 +9,22 @@ package com.grizzhacks.musclestresssimulation.muscles;
  *
  * @author Matt
  */
-public class Tricep {
+public class Tricep extends Muscle{
+    
+    private int muscleLength;
+    
+    Tricep(int length){
+        muscleLength = length;
+    }
+
+    @Override
+    public int getLength() {
+        return muscleLength;
+    }
+
+    @Override
+    public void setLength(int length) {
+        muscleLength = length;
+    }
     
 }

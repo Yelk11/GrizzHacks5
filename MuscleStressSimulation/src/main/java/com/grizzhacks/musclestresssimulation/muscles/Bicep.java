@@ -9,6 +9,23 @@ package com.grizzhacks.musclestresssimulation.muscles;
  *
  * @author Matt
  */
-public class Bicep {
+public class Bicep extends Muscle{
     
+    
+    Bicep(int length)
+    {
+        
+    }
+    
+    
+
+    @Override
+    public void setLength(int length) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public int getLength() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
 }

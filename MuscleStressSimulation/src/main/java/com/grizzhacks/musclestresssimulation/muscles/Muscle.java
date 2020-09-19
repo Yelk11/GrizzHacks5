@@ -9,6 +9,7 @@ package com.grizzhacks.musclestresssimulation.muscles;
  *
  * @author Matt
  */
-public class Muscle {
-    
+public abstract class Muscle {
+    public abstract int getLength();
+    public abstract void setLength(int length);
 }
