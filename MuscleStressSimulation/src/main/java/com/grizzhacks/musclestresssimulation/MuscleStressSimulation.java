@@ -19,13 +19,13 @@ public class MuscleStressSimulation {
         System.out.println("What is your age?");
         int age = scan.nextInt();
         
-        System.out.println("What is your gender? (m/f)");
+        System.out.println("What is your sex? (m/f)");
         boolean sex = scan.next() == "f";
         
         System.out.println("How many times a week do you workout?");
         int workoutPerWeek = scan.nextInt();
         
-        System.out.println("How much do you weight? (in grams)");
+        System.out.println("How much do you weigh? (in Kilograms)");
         double bodyWeight = scan.nextDouble();
         // calc numbers
         Calculations calc = new Calculations(age, sex, workoutPerWeek, bodyWeight);
@@ -35,7 +35,7 @@ public class MuscleStressSimulation {
         
         GUI gui = new GUI();
         try{
-        gui.window("You can lift: " + calc.getWeightICanHold());
+            gui.window("You can lift: ");// + calc.getWeightICanHold());
         }catch(Exception e){
             e.printStackTrace();
         }
