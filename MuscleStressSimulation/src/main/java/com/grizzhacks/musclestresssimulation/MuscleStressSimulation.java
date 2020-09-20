@@ -35,7 +35,7 @@ public class MuscleStressSimulation {
         
         GUI gui = new GUI();
         try{
-            gui.window("You can lift: ");// + calc.getWeightICanHold());
+            gui.window("You can lift: " + calc.getWeightICanHold());// + calc.getWeightICanHold());
         }catch(Exception e){
             e.printStackTrace();
         }
