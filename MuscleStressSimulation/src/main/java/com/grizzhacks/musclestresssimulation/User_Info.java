@@ -30,6 +30,8 @@ public class User_Info {
             maleMuscleMass(age, frequency);
         if(sex.equals("Female"))
             femaleMuscleMass(age, frequency);
+        
+        return 0;
     }
     
     private double maleMuscleMass(int age, int frequecncy){
@@ -61,6 +63,8 @@ public class User_Info {
                 return .25;
             if(frequency == 3)
                 return.31;
+            
+            return 0;
     }
     
      private double femaleMuscleMass(int age, int frequecncy){
@@ -92,6 +96,8 @@ public class User_Info {
                 return .23;
             if(frequency == 3)
                 return .26;
+            
+            return 0;
     }
     
     private int ageRange(int age){
@@ -103,5 +109,7 @@ public class User_Info {
             return 3;
         if(age >= 76 && age <= 85)
             return 4;
+        
+        return 0;
     }
 }
