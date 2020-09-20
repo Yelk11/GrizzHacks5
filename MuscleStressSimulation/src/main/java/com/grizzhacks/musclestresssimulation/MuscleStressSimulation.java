@@ -33,6 +33,11 @@ public class MuscleStressSimulation {
         System.out.println("You can lift: " + calc.getWeightICanHold());
         // display arm and message
         
-        
+        GUI gui = new GUI();
+        try{
+        gui.window("You can lift: " + calc.getWeightICanHold());
+        }catch(Exception e){
+            e.printStackTrace();
+        }
     }
 }

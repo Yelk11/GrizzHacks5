@@ -23,7 +23,7 @@ public class Calculations {
     }
     
     public double getWeightICanHold(){
-        return getTavg();
+        return getForce() - moreMath();
     }
     
     private int getTavg(){
@@ -65,7 +65,7 @@ public class Calculations {
         }
     }
     
-    public double getForce(){
+    private double getForce(){
         return getTavg() - (0.106 * bodyWeight) / 4;
     }
     
