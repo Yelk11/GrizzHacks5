@@ -27,21 +27,21 @@ public class Calculations {
     }
     
     private int getTavg(){
-        if(!sex && 18 < age && age > 35){ //Male
+        if(!sex && 18 < age && age < 35){ //Male
             return 652;
-        }else if(!sex && 36 < age && age > 55){ // Male
+        }else if(!sex && 36 < age && age < 55){ // Male
             return 550;
-        }else if(!sex && 56 < age && age > 75){ //Male
+        }else if(!sex && 56 < age && age < 75){ //Male
             return 400;
-        }else if(sex && 18 < age && age > 35){ //Female
+        }else if(sex && 18 < age && age < 35){ //Female
             return 400;
-        }else if(!sex && 76 < age && age > 85){ //Male
+        }else if(!sex && 76 < age && age < 85){ //Male
             return 400;
-        }else if (sex && 36 < age && age > 55){ // Female
+        }else if (sex && 36 < age && age < 55){ // Female
             return 400;
-        }else if(sex && 56 < age && age > 75){ // Female
+        }else if(sex && 56 < age && age < 75){ // Female
             return 200;
-        }else if(sex && 76 < age && age > 85){ //Female
+        }else if(sex && 76 < age && age < 85){ //Female
             return 120;
         }else {
             return -1;
